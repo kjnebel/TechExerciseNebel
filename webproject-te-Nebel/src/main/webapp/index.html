@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Toy Shop</title>
+<style>
+	body {
+		height: 100%;
+		width: 100%;
+		background-color: white;
+	}
+	h1 {
+		text-align: center; 
+		margin: auto; 
+		margin-top: 16px; 
+		font-size: 64px;
+		font-style: bold;
+	}
+	h2 {
+		width: 100%;
+		text-align: center;
+		margin-top: 32px;
+		margin-bottom: 16px;
+		text-decoration: underline;
+	}
+	button, a {
+		background-color: rgb(0, 82, 204);
+		color: white;
+		float: right;
+		margin: auto;
+	    border-radius: 10px;
+	    border: none;
+	    cursor: pointer;
+	    width: fit-content;
+	    height: 30px;
+	    text-decoration: none;
+	}
+	button:hover, a:hover {
+		background-color: rgb(140, 240, 251);
+	}
+	div {
+		padding: 8px;
+		width: 200px;
+		margin: auto;
+		margin-bottom: 16px;
+		height: fit-content;
+		justify-content: center;
+		align-items: center;
+		border: 2px solid black;
+		border-radius: 15px;
+	}
+	span {
+		width: 100%;
+		float: left;
+		height: 30px;
+	    text-align: center;
+	    text-justify: center;
+	}
+	.container {
+		padding: 0;
+		margin: auto;
+		border: none;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.imageCont {
+		display: flex;
+		padding: 0;
+		width: 100%;
+		margin: auto;
+		border: none;
+		align-items: center;
+		justify-content: center;
+	}
+	img {
+		padding: auto;
+		height: 100px;
+		width: 100px;
+		background-repeat: no-repeat;
+	}
+	.wide {
+		width: 150px !important;
+	}
+	a {
+		padding: 8px;
+		padding-bottom: 0;
+		margin-top: 0;
+		margin-right: 34px;
+		margin-bottom: 32px;
+	}
+</style>
+</head>
+<body>
+	<h1>Toy Shop</h1>
+	<h2>Items</h2>
+	
+	<nav>
+		<a href="/webproject-te-Nebel/SelectItems">Shopping Cart</a> <br>
+	</nav>
+
+	<section>
+		<form action="SelectItems" method="POST">
+			<div class="container">
+				<div>		
+					<span>Bouncy Ball</span>
+					<span>Price: $5.00</span>
+					<div class="imageCont">
+						<img src="http://drive.google.com/uc?export=view&id=1dY8zMNIa1TH03za6YrAeFCBMUu1UdbbK">
+					</div>
+					<br>
+					<button type="submit" name="addItem" value="ball">Add to Cart</button>
+				</div>
+				<div>		
+					<span>Deck of Cards</span>
+					<span>Price: $7.00</span>
+					<div class="imageCont">
+						<img src="http://drive.google.com/uc?export=view&id=1q4sSvliJlynqgx-1x_Im0nZ2mMauxeqS">
+					</div>
+					<br>
+					<button type="submit" name="addItem" value="cards">Add to Cart</button>
+				</div>
+				<div>		
+					<span>Pogo Stick</span>
+					<span>Price: $30.00</span>
+					<div class="imageCont">
+						<img src="http://drive.google.com/uc?export=view&id=1xhMlfHt7TCaJrcsPb82c_jGwY7lyvd_Y">
+					</div>
+					<br>
+					<button type="submit" name="addItem" value="pogo">Add to Cart</button>
+				</div>
+				<div>		
+					<span>Teddy Bear</span>
+					<span>Price: $10.00</span>
+					<div class="imageCont">
+						<img src="http://drive.google.com/uc?export=view&id=143Z81liqePApqRkVCkY6i-aCYkU_Bj-5">
+					</div>
+					<br>
+					<button type="submit" name="addItem" value="teddy">Add to Cart</button>
+				</div>
+				<div>		
+					<span>RC Car</span>
+					<span>Price: $40.00</span>
+					<div class="imageCont">
+						<img class="wide" src="http://drive.google.com/uc?export=view&id=1P-dihctTocGVS8AFVyPW-cWSteHFkPne">
+					</div>
+					<br>
+					<button type="submit" name="addItem" value="car">Add to Cart</button>
+				</div>
+				<div>		
+					<span>Nerf Gun</span>
+					<span>Price: $35.00</span>
+					<div class="imageCont">
+						<img src="http://drive.google.com/uc?export=view&id=1Swn-rWS2Lyc6bGU8BwWCat_NoVZD5Lur">
+					</div>
+					<br>
+					<button type="submit" name="addItem" value="nerf">Add to Cart</button>
+				</div>
+				<div>		
+					<span>Lego Set</span>
+					<span>Price: $65.00</span>
+					<div class="imageCont">
+						<img class="wide" src="http://drive.google.com/uc?export=view&id=16NLY_nxx6lJs7vxJSuWt9R7WtX6HVLmJ">
+					</div>
+					<br>
+					<button type="submit" name="addItem" value="lego">Add to Cart</button>
+				</div>
+				<div>		
+					<span>Slinky</span>
+					<span>Price: $8.00</span>
+					<div class="imageCont">
+						<img src="http://drive.google.com/uc?export=view&id=1xpQFV9Nv9DoSXtSf1RfUdKyIcQUij0J0">
+					</div>
+					<br>
+					<button type="submit" name="addItem" value="slinky">Add to Cart</button>
+				</div>
+			</div>
+		</form>
+	</section>
+</bodys>
+</html>
